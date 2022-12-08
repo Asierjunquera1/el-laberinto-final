@@ -12,8 +12,15 @@ def recorrer_laberinto():
     for i in range(len(laberinto)-1):
         posicion1=laberinto[1+i][0]
         if posicion1==' ':
-            posicion=posicion1
             lista.append('abajo')
+        else:
+            for j in range(len(laberinto)-1):
+                posicion2=laberinto[i][j+1]
+                if posicion2==' ':
+                    lista.append('derecha')
+ 
+                
+                    
 
     
 
@@ -23,9 +30,5 @@ def recorrer_laberinto():
 
     return lista
 print(recorrer_laberinto())
-
-
-
-
 
 
