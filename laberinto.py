@@ -18,11 +18,11 @@ def recorrer_laberinto():
             j+=1
             lista.append('derecha')
     
-        elif laberinto[i-1][j]==' ':
+        elif laberinto[i-1][j]==' ' and laberinto[i+1][j]=='X':
             i-=1
             lista.append('arriba')
     
-        elif laberinto[i][j-1]:
+        elif laberinto[i][j-1] and laberinto[i][j-1]=='X':
             j-=1
             lista.append('izquierda')
         
